@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VoltRide — UCSB E-Scooter Charging</title>
+<title>Campus Cruiser — UCSB E-Scooter Charging</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -12,8 +12,8 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --volt: #C8F53A;
-    --volt-dark: #9BC42A;
+    --volt: #80FF00;
+    --volt-dark: #6ADB00;
     --dark: #0A0E0B;
     --dark-2: #111814;
     --dark-3: #182019;
@@ -46,17 +46,11 @@
   }
 
   .nav-logo {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800; font-size: 22px;
-    color: #fff; text-decoration: none;
-    display: flex; align-items: center; gap: 8px;
+    text-decoration: none;
+    display: flex; align-items: center;
   }
-  .nav-logo .bolt {
-    width: 28px; height: 28px;
-    background: var(--volt);
-    border-radius: 6px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px;
+  .nav-logo img {
+    height: 44px; width: auto;
   }
 
   .nav-links { display: flex; gap: 36px; list-style: none; }
@@ -548,8 +542,7 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <div class="bolt">⚡</div>
-    VoltRide
+    <img src="ChatGPT_Image_Jun_2__2026__05_21_54_PM.jpeg" alt="Campus Cruiser" />
   </a>
   <ul class="nav-links">
     <li><a href="#how-it-works">How it works</a></li>
@@ -617,7 +610,7 @@
       <span class="step-num">01</span>
       <div class="step-icon">📍</div>
       <h3>Find a station</h3>
-      <p>Use our interactive map to find the nearest VoltRide charging station. See availability and open ports in real time.</p>
+      <p>Use our interactive map to find the nearest Campus Cruiser charging station. See availability and open ports in real time.</p>
     </div>
     <div class="step-card">
       <span class="step-num">02</span>
@@ -673,50 +666,31 @@
       <div class="pricing-name">Pay As You Go</div>
       <div class="pricing-desc">No commitment. Charge when you need it.</div>
       <div class="pricing-price">
-        <span class="price-amount">$0.12</span>
+        <span class="price-amount">$8.33</span>
         <span class="price-unit">/ kWh used</span>
       </div>
       <ul class="pricing-features">
-        <li>Charged per kWh consumed</li>
+        <li>Up to $2.50 per hour</li>
         <li>No monthly fees</li>
         <li>Auto-stop at full charge</li>
-        <li>Session history in app</li>
       </ul>
       <button class="btn-ghost" style="width:100%; padding:12px;" onclick="openSignupModal()">Get Started Free</button>
     </div>
     <div class="pricing-card featured">
       <div class="pricing-badge">🏆 Most Popular</div>
-      <div class="pricing-name">Gaucho Monthly</div>
+      <div class="pricing-name">Monthly</div>
       <div class="pricing-desc">Best value for daily riders on campus.</div>
       <div class="pricing-price">
-        <span class="price-amount volt">$9</span>
+        <span class="price-amount volt">$15</span>
         <span class="price-unit">/ month</span>
       </div>
       <ul class="pricing-features">
-        <li>Reduced rate: $0.07/kWh</li>
-        <li>Priority port access</li>
-        <li>1 free hour every month</li>
-        <li>Charge history & analytics</li>
-        <li>UCSB student discount</li>
+        <li>1 hour per day charging</li>
+        <li>Reduced rate: $0.50/hr (30 hrs/month)</li>
       </ul>
-      <button class="btn-primary" style="width:100%; padding:12px;" onclick="openSignupModal()">Start Free Month</button>
+      <button class="btn-primary" style="width:100%; padding:12px;" onclick="openSignupModal()">Get Started</button>
     </div>
-    <div class="pricing-card">
-      <div class="pricing-name">Group / Club</div>
-      <div class="pricing-desc">For UCSB student clubs and departments.</div>
-      <div class="pricing-price">
-        <span class="price-amount">$0.05</span>
-        <span class="price-unit">/ kWh used</span>
-      </div>
-      <ul class="pricing-features">
-        <li>Volume discount rate</li>
-        <li>Shared billing dashboard</li>
-        <li>Up to 20 members</li>
-        <li>Dedicated support</li>
-        <li>Custom usage reports</li>
-      </ul>
-      <button class="btn-ghost" style="width:100%; padding:12px;">Contact Us</button>
-    </div>
+
   </div>
 </section>
 
@@ -724,7 +698,7 @@
 <footer>
   <div class="footer-brand">
     <a href="#" class="nav-logo" style="text-decoration:none">
-      <div class="bolt">⚡</div> VoltRide
+      <img src="ChatGPT_Image_Jun_2__2026__05_21_54_PM.jpeg" alt="Campus Cruiser" style="height:44px;width:auto;" />
     </a>
     <p>Powering UCSB's last-mile mobility. Sustainable, smart, and built for campus life.</p>
   </div>
